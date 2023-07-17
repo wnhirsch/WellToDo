@@ -1,0 +1,31 @@
+<div class="group-list">
+    <div class="header">
+        <h3 class="left">{{ 'group.header' | translate }}</h3>
+        <button class="right button-text" (click)="onEditGroupsClick()">
+            {{ (isEditing ? 'group.done.button' : 'group.edit.button') | translate }}
+        </button>
+        <button class="right button-icon" (click)="onAddGroupClick()" [hidden]="!isEditing">+</button>
+    </div>
+    <div class="list">
+        <div class="group" *ngFor="let group of getGroupList()"
+            [ngStyle]="{ 'border-color': selectedGroup?.id === group.id ? group.color : 'transparent' }"
+            (click)="onCardClick(group)"
+            (focusin)="onCardFocusIn($event, group)"
+            (focusout)="onCardFocusOut($event, group)">
+    
+            <span class="color-circle" *ngIf="!isEditing"
+                [ngStyle]="{ 'background-color': group.color }"></span>
+            <input type="color" (input)="onChangeColor($event, group)"
+                *ngIf="isEditing" [value]="group.color">
+    
+            <span class="title" *ngIf="!isEditing">{{ group.title }}</span>
+            <input type="text" [placeholder]="('group.title.placeholder' | translate)"
+                [(ngModel)]="group.title" *ngIf="isEditing" maxlength="50">
+    
+            <button (click)="onDeleteGroupClick(group)" [hidden]="!isEditing">
+                <img src="assets/images/trash.png">
+            </button>
+        </div>
+        <button class="button-load" (click)="getGroups()" *ngIf="page > 1">{{ 'service.load.more' | translate }}</button>
+    </div>
+</div>

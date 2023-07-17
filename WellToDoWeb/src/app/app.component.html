@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="menu" [ngClass]="!showMenu ? 'menu-hide' : ''">
+        <app-menu [showMenu]="showMenu" (showMenuChange)="updateShowMenu($event)"
+        (filterChange)="updateFilter($event)"
+        (selectedGroupChange)="updateSelectedGroup($event)"></app-menu>
+    </div>
+    <div class="list" [ngClass]="!showMenu ? 'list-only' : ''">
+        <app-task-list
+            [showMenu]="showMenu" (showMenuChange)="updateShowMenu($event)"
+            [filter]="filter" [group]="group"></app-task-list>
+    </div>
+</div>

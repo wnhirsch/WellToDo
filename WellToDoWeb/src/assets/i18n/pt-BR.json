@@ -1,0 +1,30 @@
+{
+    "service.load.more": "Carregar mais",
+
+    "group.header": "Grupos",
+    "group.done.button": "Concluído",
+    "group.edit.button": "Editar",
+    "group.title.placeholder": "Título",
+
+    "menu.search": "Buscar",
+    "menu.check.true": "Mostrar completas",
+    "menu.check.false": "Mostrar pendentes",
+    "menu.check.null": "Mostrar qualquer status",
+    "menu.priority.high": "Mostrar alta prioridade",
+    "menu.priority.medium": "Mostrar média prioridade",
+    "menu.priority.low": "Mostrar baixa prioridade",
+    "menu.priority.null": "Mostrar qualquer prioridade",
+    "menu.flag.true": "Mostrar sinalizadas",
+    "menu.flag.false": "Mostrar não-sinalizadas",
+    "menu.flag.null": "Mostrar qualquer sinalização",
+
+    "task.all": "Todas as tarefas",
+    "task.title.placeholder": "Título",
+    "task.description.placeholder": "Descrição",
+    "task.date.format": "dd/MM/yyyy HH:mm",
+    "task.url.placeholder": "Adicionar link",
+    "task.priority.high": "Alta Prioridade",
+    "task.priority.medium": "Média Prioridade",
+    "task.priority.low": "Baixa Prioridade",
+    "task.priority.null": "Sem Prioridade"
+}

@@ -1,0 +1,19 @@
+<div class="menu">
+    <button class="menu-toggle" (click)="toggleMenu()">◀</button>
+
+    <input type="text" [placeholder]="('menu.search' | translate)"
+        [(ngModel)]="filter.sentence" (focusout)="onInputFocusOut($event)">
+
+    <input type="date" [(ngModel)]="filter.date" (focusout)="onInputFocusOut($event)">
+
+    <button class="check" [class]="getCheckClass()"
+        (click)="toggleCheck()">{{ getCheckText() }}</button>
+        
+    <button class="priority" [class]="getPriorityClass()"
+        (click)="togglePriority()">{{ getPriorityText() }}</button>
+        
+    <button class="flag" [class]="getFlagClass()"
+        (click)="toggleFlag()">{{ getFlagText() }}</button>
+
+    <app-group-list (selectedGroupChange)="updateSelectedGroup($event)"></app-group-list>
+</div>
