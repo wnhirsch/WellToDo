@@ -91,6 +91,7 @@ Toda a aplicação se baseia em 2 Modelos (Task e Group), os seus respectivos se
 
 ## Decisões e Detalhes Adicionais:
 
+- Ele foi testado e pensado ao redor do browser Google Chrome. Pode funcionar em outros, porém devido a diferenças em métodos base do CSS e Javascript é possível que tenha diferenças de comportamento. Qualquer problema encontrado peço que entre em contato.
 - O design da aplicação é responsivo, permitindo uma experiência de usuário consistente em diferentes dispositivos.
 - As requisições para as APIs do backend são realizadas assincronamente para melhorar o desempenho e a responsividade da aplicaçãop.
 - Foram utilizados padrões de projeto como o MVC (Model-View-Controller) para separação de responsabilidades e o padrão de projeto Singleton para os serviços.
