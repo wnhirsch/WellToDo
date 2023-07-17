@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'SF Pro';
+    font-weight: normal;
+    src: url(assets/fonts/SF-Pro-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    font-weight: bold;
+    src: url(assets/fonts/SF-Pro-Bold.otf) format("opentype");
+}
+
+:root {
+    --color-accent: #3C85FE;
+    --color-primary-background: #2C211E;
+    --color-secondary-background: #2F2A29;
+    --color-ternary-background: #a9a4a33f;
+    --color-primary-text: #F0F0F0;
+    --color-secondary-text: #A9A4A3;
+    --color-flag: #F1A33C;
+    --color-red: #D70015;
+    --color-yellow: #b36200;
+    --color-green: #248a3d;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--color-primary-background);
+    color: var(--color-primary-text);
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}

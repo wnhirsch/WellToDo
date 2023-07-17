@@ -1,0 +1,206 @@
+.task-list {
+  margin: 8px 16px;
+
+  .options {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      border: none;
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      border-radius: 25%;
+      font-size: 24px;
+      color: var(--color-secondary-text);
+      background-color: transparent;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: var(--color-ternary-background);
+    }
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.2s;
+
+    .left {
+      margin-right: auto;
+    }
+    
+    .right {
+      margin-left: auto;
+    }
+  }
+  
+  .list {
+    height: calc(100vh - 120px - 8px);
+    overflow: auto;
+
+    .task {
+      border-bottom: 1px solid var(--color-ternary-background);
+      padding: 8px 0;
+  
+      .task-header {
+        display: flex;
+        align-items: center;
+  
+        input[type="checkbox"] {
+          appearance: none;
+          margin: 0;
+          margin-right: 16px;
+          width: 20px;
+          height: 20px;
+          border: 1px solid var(--color-accent);
+          border-radius: 50%;
+          background-color: transparent;
+          transition: background-color 0.2s;
+        }
+  
+        input[type="checkbox"]:checked {
+          background-color: var(--color-accent);
+        }
+  
+        .priority {
+          margin-right: 4px;
+          color: var(--color-accent);
+          font-size: 16px;
+        }
+  
+        input[type="text"] {
+          padding: 0;
+          margin: 0;
+          flex-grow: 1;
+          font-size: 18px;
+          font-weight: bold;
+          border: none;
+          color: var(--color-primary-text);
+          font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background-color: transparent;
+        }
+  
+        .flag {
+          border: none;
+          cursor: pointer;
+          background-color: transparent;
+          margin-right: 16px;
+  
+          img {
+            width: 16px;
+            height: 16px;
+            object-fit: contain;
+          }
+        }
+      }
+  
+      .description {
+        margin: 0;
+        margin-top: 4px;
+        margin-left: 36px;
+        font-size: 14px;
+        cursor: text;
+        outline: none;
+        width: calc(100% - 36px);
+        height: 32px;
+        resize: none;
+        border: none;
+        color: var(--color-secondary-text);
+        font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: transparent;
+      }
+  
+      .date {
+        margin: 0;
+        margin-top: 4px;
+        margin-left: 36px;
+        margin-bottom: 4px;
+        font-size: 14px;
+        cursor: text;
+        outline: none;
+        color: var(--color-secondary-text);
+      }
+  
+      input[type="datetime-local"] {
+        margin: 0;
+        margin-top: 4px;
+        margin-left: 34px;
+        margin-bottom: 4px;
+        padding: 0;
+        border: 0;
+        font-size: 14px;
+        color: var(--color-secondary-text);
+        font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: transparent;
+      }
+
+      .date-late {
+        color: var(--color-red);
+      }
+  
+      .task-footer {
+        margin-left: 36px;
+  
+        .priority-edit, .flag-edit {
+          padding: 4px 8px;
+          font-size: 12px;
+          background-color: var(--color-ternary-background);
+          border-radius: 4px;
+          color: var(--color-primary-text);
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.2s;
+        }
+  
+        .priority-low {
+          background-color: var(--color-green);
+        }
+  
+        .priority-medium {
+          background-color: var(--color-yellow);
+        }
+  
+        .priority-high {
+          background-color: var(--color-red);
+        }
+  
+        .url {
+          margin-left: 4px;
+          padding: 4px 8px;
+          font-size: 12px;
+          background-color: var(--color-ternary-background);
+          border-radius: 4px;
+          color: var(--color-primary-text);
+        }
+  
+        .url:focus {
+          outline: none;
+        }
+  
+        .url-noedit {
+          margin-left: 0;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .button-load {
+      border: none;
+      cursor: pointer;
+      color: var(--color-secondary-text);
+      background-color: transparent;
+      transition: background-color 0.2s;
+      font-size: 16px;
+      border-radius: 0 0 4px 4px;
+      height: 32px;
+      width: 100%;
+    }
+
+    .button-load:hover {
+      background-color: var(--color-ternary-background);
+    }
+  }
+}
+  

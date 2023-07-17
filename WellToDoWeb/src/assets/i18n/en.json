@@ -1,0 +1,30 @@
+{
+    "service.load.more": "Load more",
+
+    "group.header": "Groups",
+    "group.done.button": "Done",
+    "group.edit.button": "Edit",
+    "group.title.placeholder": "Title",
+
+    "menu.search": "Search",
+    "menu.check.true": "Show completed",
+    "menu.check.false": "Show pending",
+    "menu.check.null": "Show any status",
+    "menu.priority.high": "Show high priority",
+    "menu.priority.medium": "Show medium priority",
+    "menu.priority.low": "Show low priority",
+    "menu.priority.null": "Show any priority",
+    "menu.flag.true": "Show flagged",
+    "menu.flag.false": "Show not flagged",
+    "menu.flag.null": "Show any signaling",
+
+    "task.all": "All tasks",
+    "task.title.placeholder": "Title",
+    "task.description.placeholder": "Description",
+    "task.date.format": "MM/dd/yyyy hh:mm aa",
+    "task.url.placeholder": "Add link",
+    "task.priority.high": "High Priority",
+    "task.priority.medium": "Medium Priority",
+    "task.priority.low": "Low Priority",
+    "task.priority.null": "No Priority"
+}

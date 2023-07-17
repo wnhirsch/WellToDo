@@ -1,0 +1,59 @@
+<div class="task-list">
+
+  <div class="options">
+    <button (click)="toggleMenu()">☰</button>
+    <button (click)="onAddTaskClick()">+</button>
+  </div>
+
+  <div class="header"
+    [ngStyle]="{ 'color': group ? group.color : 'var(--color-primary-text)' }">
+    <h1 class="left">{{ group ? group.title : ("task.all" | translate) }}</h1>
+    <h1 class="right">{{ tasks.length + (page > 1 ? "+" : "") }}</h1>
+  </div>
+
+  <div class="list">
+    <div class="task"
+      *ngFor="let task of getTaskList()"
+      (focusin)="onCardFocusIn($event, task)"
+      (focusout)="onCardFocusOut($event, task)">
+      <div class="task-header">
+        <input type="checkbox" [checked]="task.isChecked" (change)="onCheckboxChange($event, task)"/>
+  
+        <span *ngIf="task.priority" class="priority">{{ getPriorityExclamation(task.priority) }}</span>
+  
+        <input type="text" [placeholder]="('task.title.placeholder' | translate)"
+          [(ngModel)]="task.title" maxlength="4000">
+  
+        <button class="flag" (click)="toggleFlag(task)">
+          <img [src]="task.isFlagged ? 'assets/images/flag.png' : 'assets/images/flag-border.png'"
+            *ngIf="task.isFlagged || selectedTask === task.id">
+        </button>
+      </div>
+  
+      <textarea class="description" [(ngModel)]="task.description"
+      [placeholder]="('task.description.placeholder' | translate)"
+        *ngIf="task.description || selectedTask === task.id"></textarea>
+  
+      <p class="date" *ngIf="selectedTask != task.id" [class]="getTaskLateClass(task)">
+        {{ task.date | date: ('task.date.format' | translate) }}
+      </p>
+      <input type="datetime-local" [class]="getTaskLateClass(task)"
+        (input)="onDateChange($event, task)" [id]="'task-date-' + task.id"
+        *ngIf="selectedTask === task.id">
+  
+      <div class="task-footer">
+        <button class="priority-edit" [class]="getPriorityClass(task.priority)"
+          *ngIf="selectedTask === task.id"
+          (click)="togglePriority(task)">{{ getPriorityText(task.priority) }}</button>
+  
+        <span class="url url-noedit" (click)="openTaskLink(task)"
+          *ngIf="task.url && selectedTask != task.id">{{ task.url }}</span>
+        <span class="url" contenteditable="true"
+          *ngIf="selectedTask === task.id"
+          (focusout)="onURLFocusOut($event, task)"
+          (keydown)="onURLKeyDown($event, task)">{{ task.url || ('task.url.placeholder' | translate) }}</span>
+      </div>
+    </div>
+    <button class="button-load" (click)="getTasks()" *ngIf="page > 1">{{ "service.load.more" | translate }}</button>
+  </div>
+</div>

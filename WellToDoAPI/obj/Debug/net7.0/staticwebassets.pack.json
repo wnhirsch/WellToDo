@@ -1,0 +1,85 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/3rdpartylicenses.txt",
+      "PackagePath": "staticwebassets/3rdpartylicenses.txt"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/SF-Pro-Bold.da4e794c438235a9.otf",
+      "PackagePath": "staticwebassets/SF-Pro-Bold.da4e794c438235a9.otf"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/SF-Pro-Regular.6de88030df47f7f5.otf",
+      "PackagePath": "staticwebassets/SF-Pro-Regular.6de88030df47f7f5.otf"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/assets/fonts/SF-Pro-Bold.otf",
+      "PackagePath": "staticwebassets/assets/fonts/SF-Pro-Bold.otf"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/assets/fonts/SF-Pro-Regular.otf",
+      "PackagePath": "staticwebassets/assets/fonts/SF-Pro-Regular.otf"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/assets/i18n/en.json",
+      "PackagePath": "staticwebassets/assets/i18n/en.json"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/assets/i18n/pt-BR.json",
+      "PackagePath": "staticwebassets/assets/i18n/pt-BR.json"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/assets/images/flag-border.png",
+      "PackagePath": "staticwebassets/assets/images/flag-border.png"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/assets/images/flag.png",
+      "PackagePath": "staticwebassets/assets/images/flag.png"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/assets/images/trash.png",
+      "PackagePath": "staticwebassets/assets/images/trash.png"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/main.9513f21b315be306.js",
+      "PackagePath": "staticwebassets/main.9513f21b315be306.js"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/polyfills.b294273abfded82e.js",
+      "PackagePath": "staticwebassets/polyfills.b294273abfded82e.js"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/runtime.720f835196fc4a53.js",
+      "PackagePath": "staticwebassets/runtime.720f835196fc4a53.js"
+    },
+    {
+      "Id": "/Users/wnhirsch/Documents/WellToDo/WellToDoAPI/wwwroot/styles.ee0f6b6d02b99435.css",
+      "PackagePath": "staticwebassets/styles.ee0f6b6d02b99435.css"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.WellToDo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.WellToDo.props",
+      "PackagePath": "build\\WellToDo.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.WellToDo.props",
+      "PackagePath": "buildMultiTargeting\\WellToDo.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.WellToDo.props",
+      "PackagePath": "buildTransitive\\WellToDo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
